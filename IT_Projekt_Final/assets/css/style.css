@@ -1,0 +1,74 @@
+body {
+    background-color: #121212;
+    color: #f0f0f0;
+}
+
+.navbar-light {
+    background-color: #1a1a1a !important;
+}
+
+.navbar-light .navbar-nav .nav-link {
+    color: #f0f0f0 !important;
+    transition: transform 0.3s, text-decoration 0.3s;
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    transform: scale(1.1);
+    text-decoration: underline;
+}
+
+.navbar-light .navbar-brand {
+    color: #f0f0f0 !important;
+}
+
+.table-striped tbody tr:nth-of-type(odd) {
+    background-color: #1e1e1e;
+}
+
+.table-striped tbody tr:nth-of-type(even) {
+    background-color: #2a2a2a;
+}
+
+.table-striped thead th {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+}
+
+.table {
+    color: #f0f0f0;
+}
+
+.btn {
+    color: #121212;
+}
+
+.form-control {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    border: 1px solid #3e3e3e;
+}
+
+.form-control:focus {
+    background-color: #1e1e1e;
+    color: #f0f0f0;
+    border-color: #575757;
+}
+
+::placeholder {
+    color: #a0a0a0;
+}
+
+/* FullCalendar custom styles */
+.fc .fc-toolbar-title {
+    color: #f0f0f0;  /* Title color */
+}
+
+.fc .fc-daygrid-day-number {
+    color: #10dafd;  /* Purple date number */
+}
+
+.fc .fc-daygrid-event {
+    background-color: #10dafd;  /* Purple event background */
+    border: none;
+    color: #f0f0f0;  /* Event text color */
+}
