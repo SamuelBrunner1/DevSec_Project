@@ -10,9 +10,10 @@ steps:
 
 - script: ls -la
   displayName: 'Verzeichnisinhalt anzeigen'  
+  
+- script: php IT_Projekt_Final/index.php
+  displayName: 'Starte index.php'
 
-- script: php index.php
-  displayName: 'Starte index.php'   
 
 - script: echo " Pipeline abgeschlossen"
   displayName: 'Abschlussmeldung'
