@@ -1,0 +1,24 @@
+trigger:
+- main  # Die Pipeline wird bei jedem Push in den 'main'-Branch automatisch ausgelöst
+
+pool:
+  vmImage: 'ubuntu-latest'  # Verwende eine virtuelle Ubuntu-Umgebung
+
+steps:
+- task: UsePHPVersion@0
+  inputs:
+    version: '8.1'
+  displayName: 'Use PHP 8.1'  # 
+
+- script: php -v
+  displayName: 'Check PHP version'  
+
+- script: ls -la
+  displayName: 'List files in working directory' 
+
+- script: php index.php
+  displayName: 'Run PHP start file'  # Führt die Hauptdatei aus
+
+- script: |
+    echo "Build abgeschlossen!"
+  displayName: 'Finish message'  
